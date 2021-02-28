@@ -66,7 +66,41 @@ def find_max_subarray_linear(a: list) -> tuple:
 
 
 if __name__ == "__main__":
-    #price_change = [13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7]
-    price_change = [-62, -60, -68, -28, -22, -41, -8, -11, -61, 62, -70, -4, 90, -79, 59, -55, 76, -95, 95, -98, 99, 100, 84, 68, -76, 75, 97, -93, 19, 46]
-    print("Divide and Conquer approach:", find_max_subarray(price_change, 0, len(price_change) - 1))
+    # price_change = [13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7]
+    price_change = [
+        -62,
+        -60,
+        -68,
+        -28,
+        -22,
+        -41,
+        -8,
+        -11,
+        -61,
+        62,
+        -70,
+        -4,
+        90,
+        -79,
+        59,
+        -55,
+        76,
+        -95,
+        95,
+        -98,
+        99,
+        100,
+        84,
+        68,
+        -76,
+        75,
+        97,
+        -93,
+        19,
+        46,
+    ]
+    print(
+        "Divide and Conquer approach:",
+        find_max_subarray(price_change, 0, len(price_change) - 1),
+    )
     print("Linear approach (sliding window):", find_max_subarray_linear(price_change))
